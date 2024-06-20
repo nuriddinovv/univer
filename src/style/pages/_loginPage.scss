@@ -1,0 +1,58 @@
+@import "../sass_utils/variables";
+.login {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  &_logo {
+    background-color: $mainColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+      border-radius: 16px;
+      padding: 16px 64px;
+      height: 588px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-direction: column;
+      h1 {
+        text-align: center;
+      }
+      label {
+        display: flex;
+        background-color: $grayForInputs;
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 8px;
+        input {
+          background-color: inherit;
+          padding: $mainPadding;
+          border: none;
+          outline: none;
+          font-size: 18px;
+        }
+      }
+      button {
+        background-color: $mainColor;
+        padding: $mainPadding;
+        color: white;
+        width: 100px;
+        height: 40px;
+        border: none;
+        border-radius: 16px;
+      }
+      p{
+        color: red;
+        font-size: 16px;
+      }
+    }
+  }
+}

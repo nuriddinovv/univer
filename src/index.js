@@ -1,7 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
-
+import Context from "./context/Context";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./page/homePage/HomePage";
+import DashboardLayout from "./layouts/DashboardLayout";
+import LoginPage from "./page/loginPage/LoginPage";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(
+  <Context>
+    <Router>
+      <Routes>
+        <Route path="login" element={<LoginPage />} />
+        <Route element={<DashboardLayout />}>
+          <Route index element={<HomePage />} />
+        </Route>
+      </Routes>
+    </Router>
+  </Context>
+);
