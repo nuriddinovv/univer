@@ -16,7 +16,7 @@ export default function LoginPage() {
     event.preventDefault();
 
     if (username === "user" && password === "1234") {
-      localStorage.setItem("username", username);
+      localStorage.setItem("user", username);
       navigate("/");
     } else {
       setError(true);
