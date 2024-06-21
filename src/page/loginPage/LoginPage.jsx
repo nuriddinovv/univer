@@ -38,7 +38,7 @@ export default function LoginPage() {
           </Alert>
         )}
         <form onSubmit={handleSubmit}>
-          <h1>logo</h1>
+          <h1>LOGO</h1>
           <label>
             <img src={userIcon} alt="user icon" />
             <input
