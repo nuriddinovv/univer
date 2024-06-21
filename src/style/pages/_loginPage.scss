@@ -59,8 +59,10 @@
 
 @media screen and (max-width: 768px) {
   .login {
-    display: block;
-    &_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_logo {
       display: none;
     }
   }
