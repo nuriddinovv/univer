@@ -63,14 +63,14 @@
   .login {
     display: flex;
     justify-content: center;
-    align-items: center;
+    height: auto;
     &_logo {
       display: none;
     }
     &_text {
       form {
         padding: 16px 24px;
-        margin-bottom: 100px;
+        margin: 150px 0;
       }
     }
   }
