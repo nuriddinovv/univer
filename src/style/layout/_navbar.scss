@@ -1,3 +1,43 @@
-i {
-  cursor: pointer;
+@import "../sass_utils/variables";
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 32px;
+  font-size: 16px;
+  &logo {
+    padding: 0 50px;
+  }
+  &studentData {
+    h3 {
+      color: $mainColor;
+    }
+  }
+  &profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &select {
+      padding: 14px 10px;
+      border: none;
+      border-radius: 10px;
+      background-color: $grayForInputs;
+    }
+    &contract {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: space-between;
+      font-weight: 600;
+      :nth-child(2) {
+        color: red;
+      }
+    }
+    &Setting {
+      font-size: 24px;
+      display: flex;
+      gap: 20px;
+      cursor: pointer;
+    }
+  }
 }

@@ -16,26 +16,26 @@ export default function Navbar() {
   }
 
   return (
-    <div>
-      <div className="logo">
+    <div className="navbar">
+      <div className="navbarlogo">
         <h1>LOGO</h1>
       </div>
-      <div className="studentData">
+      <div className="navbarstudentData">
         <h3>ELYORBEK BAXODIROV ELMUROD O‘G‘LI</h3>
         <p>Iqtisodiyot (IS 23-16)</p>
       </div>
-      <div className="profile">
-        <select name="" id="">
+      <div className="navbarprofile">
+        <select className="navbarprofileselect" name="" id="">
           <option value="2023">2023-2024</option>
           <option value="2024">2024-2025</option>
           <option value="2025">2025-2026</option>
           <option value="2026">2026-2027</option>
         </select>
-        <div className="contract">
+        <div className="navbarprofilecontract">
           <p>Kontrakt: 12 000 000 so'm</p>
           <p>Qarzdorlik: Qarzdorlik yo'q</p>
         </div>
-        <div className="profileSetting">
+        <div className="navbarprofileSetting">
           <i className="pi pi-bell"></i>
           <i className="pi pi-user"></i>
           <i
