@@ -1,16 +1,22 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
-import { Navigate, Outlet, useNavigate } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
+import Sider from "../components/sider/Sider";
 
 export default function DashboardLayout() {
   const auth = localStorage.getItem("user");
-  console.log(auth);
+
+  if (!auth) {
+    return <Navigate to="/login" />;
+  }
+
   return (
     <div>
       <Navbar />
-      {auth ? <Outlet /> : <Navigate to={"/login"} />}
-      <Footer />
+      <div>
+        <Sider />
+        <Outlet />
+      </div>
     </div>
   );
 }
