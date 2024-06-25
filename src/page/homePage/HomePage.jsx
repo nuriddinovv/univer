@@ -1,22 +1,7 @@
-import React, { useState } from "react";
-import { Navigate } from "react-router-dom";
-
 export default function HomePage() {
-  const [navigate, setNavigate] = useState(false);
-
-  function clearLocalstorage() {
-    localStorage.removeItem("user");
-    setNavigate(true);
-    console.log("navigate");
-  }
-
-  if (navigate) {
-    return <Navigate to="/login" />;
-  }
-
   return (
-    <div style={{ backgroundColor: "white", marginTop: "20px" }}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, at
+    <div style={{ backgroundColor: "white", }}>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed nihil tempora reprehenderit similique repellat ex architecto dolores asperiores dicta itaque cum exercitationem, vitae rerum cumque repudiandae eum corporis delectus at eveniet deserunt officia nam vel. Repellat, maxime tenetur! Magni veritatis libero ipsam, cum, optio officia exercitationem praesentium quibusdam omnis, enim blanditiis esse eos reprehenderit nostrum doloremque quia eius voluptas? Esse dignissimos voluptatum aut eligendi, voluptatem quidem dolorum asperiores vero, laudantium ab nesciunt recusandae? Eum explicabo laboriosam tempora delectus officiis esse dolorum velit animi, enim ad neque quibusdam ea aliquid unde. Velit, molestias! Quam mollitia sapiente suscipit similique assumenda a debitis velit maxime repudiandae tempora, molestiae eos aut ab eligendi iure voluptates! Fuga, eligendi laudantium? Totam reprehenderit qui ipsam voluptatem, nisi ipsum non velit libero alias sit reiciendis delectus provident sapiente accusamus odio eligendi esse recusandae labore mollitia earum ducimus, expedita ut et. Obcaecati unde, et placeat accusantium non natus pariatur itaque deserunt suscipit minima ipsam rerum! Quidem laborum mollitia dolores nostrum illum quo eligendi voluptatibus enim! Neque sunt inventore fugit voluptas perspiciatis delectus temporibus quis, qui harum ullam doloremque ad rerum, odio alias ducimus error minima voluptates vero facere corporis rem sint quo optio sapiente. Tempore vel error accusamus debitis dolor? Commodi, dicta voluptate consequatur, asperiores quo corporis in est, perspiciatis suscipit ea cumque molestias aspernatur quisquam pariatur. Necessitatibus, saepe. Debitis nemo ea, soluta illo aspernatur ex, tempora corporis alias voluptate nobis ipsam totam. Ab aperiam explicabo ex culpa repudiandae delectus voluptatibus et debitis maiores sint perspiciatis iusto dolorem nulla consequuntur molestias fuga blanditiis, hic, perferendis ratione odit excepturi commodi nostrum possimus sapiente. Vitae porro molestias non sequi culpa repudiandae laudantium adipisci eaque rem ut, accusantium possimus delectus soluta optio excepturi, reiciendis minus provident iste reprehenderit quam nihil magni omnis consequuntur? Voluptates quis ea quia quisquam eum error quas, aliquid asperiores repellendus magnam? Dolor ex enim similique sit quisquam minus dolore, distinctio corrupti numquam esse repudiandae asperiores? Itaque deserunt quos repellendus velit ea iusto odio, officiis vel nisi aperiam aliquid, perspiciatis, suscipit animi tempore doloribus debitis commodi atque nulla! A alias dolorum, dolorem est facere suscipit magnam sit, expedita, totam distinctio aliquam voluptates nulla? Numquam nesciunt voluptatem doloribus, consequatur adipisci voluptatibus. Voluptates sunt nostrum exercitationem accusantium quis. Exercitationem obcaecati dolorem illum non quibusdam magni ab voluptate mollitia facere earum fugiat debitis voluptatibus sunt repellat incidunt cupiditate saepe tempora, corporis adipisci consectetur asperiores culpa animi harum. Odit quae animi quia aliquid eligendi rem doloribus eum neque? Doloremque tenetur aspernatur voluptatibus accusamus atque laboriosam vero, repudiandae facere cupiditate ratione fugit, aperiam dolorum, voluptatem error quaerat necessitatibus. Repudiandae dolores blanditiis neque sit. Reprehenderit laudantium, dolore tenetur aut ipsa nemo inventore? Libero quam quia cum inventore alias. Sunt animi debitis, ducimus, odio mollitia magni atque dolores, fugit omnis cupiditate quas. Doloribus dolor tempore praesentium possimus, totam deleniti! Perferendis similique expedita alias rerum. Cum facere similique iusto cumque eligendi. Debitis error facere itaque totam fugit aliquam ab rem voluptatum! Nobis qui architecto labore velit officiis quisquam ipsam aliquam. Magnam libero doloribus voluptatibus velit sint. ipsum dolor sit amet, consectetur adipisicing elit. Inventore, at
       voluptatibus! Dignissimos soluta natus voluptatum ab nihil placeat
       temporibus sit animi accusantium, libero nisi alias! Id maxime accusamus
       expedita aperiam nemo repellendus quis dolore ea. Possimus voluptatibus

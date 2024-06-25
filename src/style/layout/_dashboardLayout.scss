@@ -1,7 +1,36 @@
-.layout {
-  &Sider {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    gap: 20px;
-  }
+.DashboardLayout {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "sidebar outlet outlet outlet";
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.navbar {
+  grid-area: navbar;
+  z-index: 5;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  height: calc(100vh - 90px);
+  width: 280px;
+  overflow-y: auto;
+  position: fixed;
+  top: 90px;
+  left: 0;
+}
+
+.outlet {
+  grid-area: outlet;
+  margin: 20px 0;
+  position: relative;
+  top: 90px;
 }

@@ -11,10 +11,14 @@ export default function DashboardLayout() {
   }
 
   return (
-    <div className="layout">
-      <Navbar />
-      <div className="layoutSider">
+    <div className="DashboardLayout">
+      <div className="navbar">
+        <Navbar />
+      </div>
+      <div className="sidebar">
         <Sider />
+      </div>
+      <div className="outlet">
         <Outlet />
       </div>
     </div>
