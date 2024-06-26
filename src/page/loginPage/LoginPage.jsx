@@ -17,7 +17,7 @@ export default function LoginPage() {
 
     if (username === "user" && password === "1234") {
       localStorage.setItem("user", username);
-      navigate("/");
+      navigate("/student");
     } else {
       setError(true);
       setTimeout(() => {

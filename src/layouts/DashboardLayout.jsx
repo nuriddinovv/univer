@@ -13,13 +13,19 @@ export default function DashboardLayout() {
   return (
     <div className="DashboardLayout">
       <div className="navbar">
-        <Navbar />
+        <div className="navbar_content">
+          <Navbar />
+        </div>
       </div>
       <div className="sidebar">
-        <Sider />
+        <div className="sidebar_content">
+          <Sider />
+        </div>
       </div>
       <div className="outlet">
-        <Outlet />
+        <div className="outlet_content">
+          <Outlet />
+        </div>
       </div>
     </div>
   );

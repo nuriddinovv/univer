@@ -5,24 +5,27 @@
     "sidebar outlet outlet outlet";
   grid-template-columns: 1fr 4fr;
   grid-template-rows: auto 1fr;
-  height: 100vh;
+  // height: 100vh;
 }
 
 .navbar {
-  grid-area: navbar;
   z-index: 5;
-  position: fixed;
+  grid-area: navbar;
   background-color: #fff;
+}
+.navbar_content {
+  position: fixed;
   top: 0;
-  right: 0;
   left: 0;
+  right: 0;
 }
 
 .sidebar {
   grid-area: sidebar;
-  height: calc(100vh - 90px);
-  width: 280px;
+}
+.sidebar_content {
   overflow-y: auto;
+  height: calc(100vh - 90px);
   position: fixed;
   top: 90px;
   left: 0;
@@ -30,7 +33,31 @@
 
 .outlet {
   grid-area: outlet;
-  margin: 20px 0;
+  overflow: hidden;
+}
+.outlet_content {
+  margin: 20px 20px 20px 0;
   position: relative;
-  top: 90px;
+  top: 45px;
+}
+::-webkit-scrollbar {
+  background-color: #f5f5f5;
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #039e51;
+  background-image: -webkit-linear-gradient(
+    top,
+    #e4f5fc,
+    #bff9c4 50%,
+    #9fef9f 51%,
+    #039e51
+  );
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
